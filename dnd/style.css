@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Fleur+De+Leah&family=Luxurious+Script&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Albert Sans";
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    height: 70px;
+
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+
+
+.nav-item {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.nav-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #808080;
+    text-align: center;
+    margin-right: 50px;
+    font-family: "Albert Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    transition: ease .2s;
+    /* 222.5% */
+
+}
+
+.nav-item a:hover {
+    color: #000
+}
+
+.nav-item a .active {
+    color: #000;
+}
+
+
+.nav-item:first-child {
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.hero-section {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.hero-section h1 {
+    color: #000;
+    text-align: center;
+    font-family: "Albert Sans";
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    padding: 60px 170px;
+}
+
+.hero-section h1 span {
+    color: #3263C4;
+    font-family: "Albert Sans";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-section .hero-des {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.hero-des .elipse {
+    width: 871px;
+    height: 871px;
+    flex-shrink: 0;
+    border-radius: 871px;
+    opacity: 0.9;
+    background: #244CFF;
+    filter: blur(126.80000305175781px);
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+}
+
+.centered-image {
+    position: absolute;
+    top: -120px;
+    width: 380px;
+    height: auto;
+    z-index: 2;
+}
+
+.hero-des button {
+    position: absolute;
+    width: 168px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    border: 0.1px solid #000;
+    background: #FFF;
+    box-shadow: -2px 3px 25px 6px rgba(255, 255, 255, 0.8);
+    color: #3263C4;
+
+    text-align: center;
+    font-family: "Albert Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.button1 {
+    z-index: 3;
+    inset: 120px 329px 310px 950px;
+
+}
+
+.button2 {
+    z-index: 4;
+    inset: 250px 909px 98px 363px;
+
+}
+
+.footlist {
+    height: 70px;
+    position: absolute;
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 94px;
+    margin-bottom: 0px;
+    bottom: 0;
+    align-items: flex-end;
+}
+
+.footitem img {
+    width: 31px;
+    height: 32px;
+    margin-right: 18px;
+}
+
+.res-des {
+    height: 90vh;
+    overflow: hidden;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "img ."
+        "img ."
+        "eli ."
+    ;
+
+}
+
+.res-des .res-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.res-content h1 {
+    color: #000;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 100px;
+    font-family: "Albert Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    /* 92.708% */
+}
+
+.res-content h1 span {
+    color: #3E61FD;
+
+    font-family: "Albert Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    position: relative;
+}
+
+.res-content a {
+    display: inline-block;
+    /* Makes the anchor behave as a block or inline-block element */
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+
+
+.res-content a button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    width: 350px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: 0.5px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 20.3px 7px rgba(62, 97, 253, 0.57);
+    color: #3E61FD;
+    text-align: center;
+    font-family: "Albert Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    cursor: pointer;
+
+}
+
+.res-des .elipse2 {
+    grid-area: img;
+    width: 871px;
+    height: 871px;
+    flex-shrink: 0;
+    border-radius: 871px;
+    opacity: 0.9;
+    background: #244CFF;
+    filter: blur(126.80000305175781px);
+    margin-left: -300px;
+    margin-top: 350px;
+
+}
+
+.res-des .mainpic {
+    grid-area: img;
+    z-index: 1;
+    width: 1150px;
+    justify-content: flex-start;
+    margin-top: -100px;
+    height: auto;
+}
+
+.rfootlist {
+    list-style: none;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: 80px;
+
+
+}
+
+.rfootitem {
+    margin-right: 20px;
+}
+
+.rfootlist a img {
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+
+
+.nav-item a.active {
+    color: #000;
+}
